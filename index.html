@@ -419,6 +419,20 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
     <div class="v" id="totalV">0<small> tCO₂eq</small></div>
     <div class="cmp" id="cmpV"></div>
   </div>
+  <section class="card">
+    <div class="card-head"><span class="sec-ico">📊</span><h2>분야별 배출량</h2></div>
+    <div class="card-body"><div class="sector-bars" id="sectorBars"></div>
+      <p id="topSector" style="font-size:.88rem;font-weight:700;color:var(--pine);margin-top:8px;"></p></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><span class="sec-ico">📋</span><h2>항목별 상세</h2></div>
+    <div class="card-body">
+      <div class="table-scroll">
+        <table class="result"><thead><tr><th>분야</th><th>항목</th><th>입력값</th><th>배출량 (tCO₂eq)</th></tr></thead><tbody id="detailBody"></tbody></table>
+      </div>
+      <p style="font-size:.74rem;color:var(--ink-soft);margin-top:10px;">※ 원단위는 녹색전환연구소 1.5℃ 라이프스타일 계산기(2025)·환경공단 가이드라인 기반 예시값입니다. 텀블러·다회용기·장바구니는 이미 실천 중인 경우 배출량을 낮추는 마이너스로 반영됩니다.</p>
+    </div>
+  </section>
   <section class="card" id="reduceResultCard" style="display:none;">
     <div class="card-head"><span class="sec-ico">🌱</span><h2>실천하면 이만큼 줄어요</h2></div>
     <div class="card-body">
@@ -436,20 +450,6 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
   <section class="card" id="policyResultCard" style="display:none;">
     <div class="card-head"><span class="sec-ico">🏛️</span><h2>내가 고른 정책</h2></div>
     <div class="card-body"><p id="policyPickV" style="font-size:.9rem;line-height:1.7;"></p></div>
-  </section>
-  <section class="card">
-    <div class="card-head"><span class="sec-ico">📊</span><h2>분야별 배출량</h2></div>
-    <div class="card-body"><div class="sector-bars" id="sectorBars"></div>
-      <p id="topSector" style="font-size:.88rem;font-weight:700;color:var(--pine);margin-top:8px;"></p></div>
-  </section>
-  <section class="card">
-    <div class="card-head"><span class="sec-ico">📋</span><h2>항목별 상세</h2></div>
-    <div class="card-body">
-      <div class="table-scroll">
-        <table class="result"><thead><tr><th>분야</th><th>항목</th><th>입력값</th><th>배출량 (tCO₂eq)</th></tr></thead><tbody id="detailBody"></tbody></table>
-      </div>
-      <p style="font-size:.74rem;color:var(--ink-soft);margin-top:10px;">※ 원단위는 녹색전환연구소 1.5℃ 라이프스타일 계산기(2025)·환경공단 가이드라인 기반 예시값입니다. 텀블러·다회용기·장바구니는 이미 실천 중인 경우 배출량을 낮추는 마이너스로 반영됩니다.</p>
-    </div>
   </section>
 </div>
 
