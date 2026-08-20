@@ -135,13 +135,14 @@ footer{text-align:center;font-size:.78rem;color:var(--ink-soft);margin-top:36px;
 .pol-item>input{margin-top:3px;flex:none;}
 .pol-text{flex:1;}
 .pol-name{font-weight:700;font-size:.92rem;color:var(--ink);}
-a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
+a.pol-name,a.pol-desc{color:var(--ink);text-decoration:underline;}
 .pol-desc{display:block;font-size:.8rem;color:var(--ink-soft);margin-top:2px;line-height:1.5;}
 .reduce-stats{display:flex;gap:10px;flex-wrap:wrap;}
 .reduce-stats .rs{flex:1;min-width:120px;background:#f2f9f5;border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center;}
 .rs-k{font-size:.8rem;color:var(--ink-soft);}
 .rs-v{font-size:1.25rem;font-weight:800;color:var(--pine);margin-top:4px;}
 .rs-v.neg{color:var(--sky);}
+.q-label.chal{color:#188f5c;}
 </style>
 
 </head>
@@ -221,7 +222,7 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
   <div class="card-head"><span class="sec-ico">🍽️</span><h2>먹거리</h2><span class="live" id="h-food">0 tCO₂eq</span></div>
   <div class="card-body">
     <div class="q">
-      <div class="q-label"><span class="q-num">Q7.</span> 챌린지 기간 중(2026년 8월 24일~9월 6일, 이하 생략) 평소 식사는 어떻게 하셨는지요?</div>
+      <div class="q-label chal"><span class="q-num">Q7.</span> 챌린지 기간 중(2026년 8월 24일~9월 6일, 이하 생략) 평소 식사는 어떻게 하셨는지요?</div>
       <div class="opts" data-radio="diet">
         <label class="opt"><input type="radio" name="diet" value="1.24"> 고기를 매일 먹는다</label>
         <label class="opt"><input type="radio" name="diet" value="0.8"> 일주일에 세 번 정도 먹는다</label>
@@ -229,32 +230,32 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
       </div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q8.</span> 하루에 커피를 몇 잔 정도 마셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q8.</span> 하루에 커피를 몇 잔 정도 마셨나요?</div>
       <div class="unit-row"><input type="number" id="coffee" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">잔 / 일</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q9.</span> 일주일에 외식이나 배달 음식을 몇 번 정도 드셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q9.</span> 일주일에 외식이나 배달 음식을 몇 번 정도 드셨나요?</div>
       <div class="unit-row"><input type="number" id="eatout" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">회 / 주</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q10.</span> 먹다 남기거나 상해서 버리는 음식이 자주 생기셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q10.</span> 먹다 남기거나 상해서 버리는 음식이 자주 생기셨나요?</div>
       <div class="opts row" data-radio="foodwaste">
         <label class="opt"><input type="radio" name="foodwaste" value="0.001"> 예</label>
         <label class="opt"><input type="radio" name="foodwaste" value="0"> 아니오</label>
       </div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q11.</span> 일주일에 몇 번, 일회용 컵 대신 텀블러나 개인 컵을 사용하셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q11.</span> 일주일에 몇 번, 일회용 컵 대신 텀블러나 개인 컵을 사용하셨나요?</div>
       <div class="q-desc">이미 실천 중이라면 현재 배출량이 그만큼 줄어듭니다.</div>
       <div class="unit-row"><input type="number" id="cup" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">회 / 주</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q12.</span> 음식 포장 시, 일주일에 평균 몇 회 정도 다회용기(집에 있는 그릇·용기)를 사용하셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q12.</span> 음식 포장 시, 일주일에 평균 몇 회 정도 다회용기(집에 있는 그릇·용기)를 사용하셨나요?</div>
       <div class="q-desc">집에 있는 그릇·용기를 가게에 가져가 담아 오는 것을 말해요.</div>
       <div class="unit-row"><input type="number" id="container" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">회 / 주</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q13.</span> 일주일에 몇 번, 비닐봉투 대신 장바구니나 에코백을 사용하셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q13.</span> 일주일에 몇 번, 비닐봉투 대신 장바구니나 에코백을 사용하셨나요?</div>
       <div class="unit-row"><input type="number" id="bag" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">회 / 주</span></div>
     </div>
   </div>
@@ -265,12 +266,12 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
   <div class="card-head"><span class="sec-ico">🛍️</span><h2>소비</h2><span class="live" id="h-consume">0 tCO₂eq</span></div>
   <div class="card-body">
     <div class="q">
-      <div class="q-label"><span class="q-num">Q14.</span> 최근 1년(2025.9.7~2026.9.6) 동안 옷을 몇 벌이나 새로 사셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q14.</span> 최근 1년(2025.9.7~2026.9.6) 동안 옷을 몇 벌이나 새로 사셨나요?</div>
       <div class="q-desc">신발과 속옷은 빼고 세어 주세요.</div>
       <div class="unit-row"><input type="number" id="clothes" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">벌</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q15.</span> 챌린지 기간 중 집에서 사용하셨던 전자제품별 개수를 적어 주세요.</div>
+      <div class="q-label chal"><span class="q-num">Q15.</span> 챌린지 기간 중 집에서 사용하셨던 전자제품별 개수를 적어 주세요.</div>
       <div class="q-desc">가지고 있는 것만 체크하고 대수를 입력하세요 (기본 1대).</div>
       <div class="chk-grid" id="applianceGrid"></div>
     </div>
@@ -289,13 +290,13 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
   <div class="card-head"><span class="sec-ico">🚌</span><h2>교통</h2><span class="live" id="h-transport">0 tCO₂eq</span></div>
   <div class="card-body">
     <div class="q">
-      <div class="q-label"><span class="q-num">Q18.</span> 챌린지 기간 중 일주일 동안 각 교통수단을 몇 시간이나 이용하셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q18.</span> 챌린지 기간 중 일주일 동안 각 교통수단을 몇 시간이나 이용하셨나요?</div>
       <div class="q-desc">30분은 0.5시간으로 적어 주세요. 예: 매일 왕복 1시간씩 5일 버스를 타면 5시간. 이용하는 것만 적으면 됩니다.</div>
       <div class="time-grid" id="transportGrid"></div>
       <div class="q-desc" style="color:var(--amber);margin-top:8px;">* 전기자전거·PM은 공식 원단위가 아직 없어 참고 입력(계산 미포함)입니다.</div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q19.</span> 최근 1년(2025년 9월 7일~2026년 9월 6일, 이하 생략) 동안 비행기를 몇 시간이나 타셨나요?</div>
+      <div class="q-label chal"><span class="q-num">Q19.</span> 최근 1년(2025년 9월 7일~2026년 9월 6일, 이하 생략) 동안 비행기를 몇 시간이나 타셨나요?</div>
       <div class="q-desc">편도 기준으로 더해 주세요. 예: 제주 왕복은 약 2시간.</div>
       <div class="unit-row"><input type="number" id="air" class="inline" min="0" step="0.5" placeholder="예: 1" oninput="live()"><span class="u">시간 / 년</span></div>
     </div>
@@ -333,15 +334,23 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
       <div class="opts row" data-radio="elecbill" id="elecbillOpts"></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q23.</span> 겨울에 난방은 어떤 방식으로 하시나요? <span class="tip" data-tip="집집마다 가스보일러가 있으면 '개별 가스보일러', 아파트 단지에 열이 공급되면 '지역난방'이에요.">?</span></div>
+      <div class="q-label chal"><span class="q-num">Q23.</span> 챌린지 기간 동안 에어컨 온도를 평소보다 1℃ 이상 올려서 생활했다</div>
+      <div class="q-desc">권장 냉방온도 26℃</div>
+      <div class="opts row" data-radio="acup">
+        <label class="opt"><input type="radio" name="acup" value="yes"> 예</label>
+        <label class="opt"><input type="radio" name="acup" value="no"> 아니오</label>
+      </div>
+    </div>
+    <div class="q">
+      <div class="q-label"><span class="q-num">Q24.</span> 겨울에 난방은 어떤 방식으로 하시나요? <span class="tip" data-tip="집집마다 가스보일러가 있으면 '개별 가스보일러', 아파트 단지에 열이 공급되면 '지역난방'이에요.">?</span></div>
       <div class="opts" data-radio="heattype" id="heattypeOpts"></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q24.</span> 겨울철(11~2월) 한 달 평균 난방비는 얼마 정도인가요?</div>
+      <div class="q-label"><span class="q-num">Q25.</span> 겨울철(11~2월) 한 달 평균 난방비는 얼마 정도인가요?</div>
       <div class="opts row" data-radio="heatcost" id="heatcostOpts"></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q25.</span> 태양광으로 만든 전기를 사용하시나요?</div>
+      <div class="q-label"><span class="q-num">Q26.</span> 태양광으로 만든 전기를 사용하시나요?</div>
       <div class="q-desc">해당하는 것을 모두 선택하세요.</div>
       <div class="opts">
         <label class="opt"><input type="checkbox" class="solarChk" value="none"> 사용 안 함</label>
@@ -350,7 +359,7 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
       </div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q26.</span> 지금 사시는 집에 단열이나 창문 교체 공사를 한 적이 있나요?</div>
+      <div class="q-label"><span class="q-num">Q27.</span> 지금 사시는 집에 단열이나 창문 교체 공사를 한 적이 있나요?</div>
       <div class="opts row" data-radio="insul">
         <label class="opt"><input type="radio" name="insul" value="1"> 예</label>
         <label class="opt"><input type="radio" name="insul" value="0"> 아니오</label>
@@ -364,19 +373,19 @@ a.pol-name,a.pol-desc{color:var(--pine);text-decoration:underline;}
   <div class="card-head"><span class="sec-ico">🎮</span><h2>여가</h2><span class="live" id="h-leisure">0 tCO₂eq</span></div>
   <div class="card-body">
     <div class="q">
-      <div class="q-label"><span class="q-num">Q27.</span> 챌린지 기간 중 여가 시간을 주로 어떻게 보내셨는지 2가지를 선택해주세요.</div>
+      <div class="q-label chal"><span class="q-num">Q28.</span> 챌린지 기간 중 여가 시간을 주로 어떻게 보내셨는지 2가지를 선택해주세요.</div>
       <div class="chk-grid" id="leisureGrid"></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q28.</span> 최근 1년(2025.9.7~2026.9.6) 동안 스키장에 며칠이나 다녀오셨나요?</div>
+      <div class="q-label"><span class="q-num">Q29.</span> 최근 1년(2025.9.7~2026.9.6) 동안 스키장에 며칠이나 다녀오셨나요?</div>
       <div class="unit-row"><input type="number" id="ski" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">일</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q29.</span> 최근 1년(2025.9.7~2026.9.6) 동안 골프장에 며칠이나 다녀오셨나요?</div>
+      <div class="q-label"><span class="q-num">Q30.</span> 최근 1년(2025.9.7~2026.9.6) 동안 골프장에 며칠이나 다녀오셨나요?</div>
       <div class="unit-row"><input type="number" id="golf" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">일</span></div>
     </div>
     <div class="q">
-      <div class="q-label"><span class="q-num">Q30.</span> 최근 1년(2025.9.7~2026.9.6) 동안 여행지에서 며칠이나 숙박하셨나요?</div>
+      <div class="q-label"><span class="q-num">Q31.</span> 최근 1년(2025.9.7~2026.9.6) 동안 여행지에서 며칠이나 숙박하셨나요?</div>
       <div class="unit-row"><input type="number" id="travel" class="inline" min="0" step="1" placeholder="예: 1" oninput="live()"><span class="u">일</span></div>
     </div>
   </div>
@@ -518,23 +527,23 @@ const COFFEE = 0.03; // 하루 1잔 매일 = 87g×365 = 0.03톤/년
 
 /* ===== 실천 후: 감축 실천(6번) · 정책 수요(7번) ===== */
 const REDUCE=[
- {id:"kpass",num:"31",label:"대중교통 이용을 위해 K-패스에 가입하겠다",desc:"K-패스: 대중교통 이용 시 교통비 일부 환급(월 15회 이상)",type:"yn",ton:0.0016757},
- {id:"email",num:"32",label:"매주 불필요한 이메일을 삭제하겠다",tip:"이메일 1통 ≈ 약 4g CO₂eq(추정)로 보고, 매주 삭제를 1년(52주)으로 환산해 반영합니다. 정확한 값이 아니라 참고용입니다. (출처: Mike Berners-Lee, 『How Bad Are Bananas?』, 2010)",type:"num",unit:"통",per:0.000208,ref:true},
- {id:"aircon",num:"33",label:"에어컨 온도를 평소보다 1℃ 올리겠다",desc:"권장 냉방온도 26℃",type:"yn",ton:0.150},
- {id:"heat",num:"34",label:"난방온도를 평소보다 2℃ 낮추겠다",desc:"권장 난방온도 20℃",type:"yn",ton:0.132},
- {id:"insulR",num:"35",label:"지금 사는 집에 단열공사나 창문 교체 공사를 하겠다",desc:"감축량은 진단에서 입력한 평수 기준으로 계산됩니다.",type:"yn",calc:function(r){return areaPy()*0.003;}},
- {id:"solarR",num:"36",label:"집에 태양광을 설치하겠다",type:"select",options:[["none","아니오",0],["mini","베란다 미니태양광(0.3kW)",0.1356],["roof","주택 옥상 태양광(3kW)",1.356]]},
- {id:"solarAgree",num:"37",label:"아파트 옥상 태양광 설치에 동의하겠다",desc:"공동주택 공용부분 태양광은 보통 해당 동 입주자 50% 이상 동의가 필요합니다(공동주택관리법 제35조).",type:"yn",record:true},
- {id:"solarCoop",num:"38",label:"태양광 에너지 조합에 가입할 의사가 있다",type:"yn",record:true,desc:'가입 가능한 조합 — <a href="https://swsolarcoop.kr/" target="_blank" rel="noopener">수원시민햇빛발전사회적협동조합 ↗</a> · <a href="https://suwonsolar.mixon.io" target="_blank" rel="noopener">수원에너지협동조합 ↗</a> · <a href="https://ggenergycoop.com" target="_blank" rel="noopener">경기에너지협동조합 ↗</a> · <a href="https://moducoops.mixon.io" target="_blank" rel="noopener">모두가치에너지협동조합 ↗</a> · <a href="https://www.climate-today.com" target="_blank" rel="noopener">기후시민에너지협동조합 ↗</a>'},
- {id:"ncpoint",num:"39",label:"환경부 탄소중립포인트에 가입해 에너지 소비를 줄이겠다",type:"yn",ton:0.107},
- {id:"ricepot",num:"40",label:"전기밥솥 보온 시간을 줄이겠다",desc:"취사만 하고 보온 미사용(하루 약 9시간 보온 절감 가정)",type:"yn",ton:0.45792},
- {id:"fridge",num:"41",label:"냉장고를 60% 정도만 채워 유지하겠다",type:"yn",ton:0.04159},
- {id:"phone",num:"42",label:"휴대폰 사용시간을 줄이겠다",type:"num",pre:"평소 대비",post:"% 줄이겠다",calc:function(r,val){return phoneEmit()*(val/100);}},
- {id:"tv",num:"43",label:"TV 시청 시간을 줄이겠다",desc:"하루에 줄일 시간을 적어 주세요.",type:"num",unit:"시간/일",per:0.01604},
- {id:"blanket",num:"44",label:"겨울철 전기장판 사용시간을 줄이겠다",desc:"하루에 줄일 시간을 적어 주세요(겨울 120일 기준).",type:"num",unit:"시간/일",per:0.0629},
- {id:"ecodrive",num:"45",label:"승용차 운전 시 친환경운전을 하겠다",desc:"해당하는 것을 모두 선택하세요.",type:"multi",options:[["idle","공회전 줄이기",0.30077],["speed","경제속도 유지(약 60~80km/h)",0.17002],["load","불필요한 짐 줄이기",0.02762]]},
- {id:"car5",num:"46",label:"승용차 5부제에 참여하겠다",desc:"주 1회 운행하지 않고 대중교통 이용(연 52일)",type:"yn",ton:0.279},
- {id:"ev",num:"47",label:"휘발유·디젤 차량을 전기차로 교체하겠다",desc:"교체 후 운행단계의 연간 감축효과",type:"yn",ton:0.97}
+ {id:"kpass",num:"32",label:"대중교통 이용을 위해 K-패스에 가입하겠다",desc:"K-패스: 대중교통 이용 시 교통비 일부 환급(월 15회 이상)",type:"yn",ton:0.0016757},
+ {id:"email",num:"33",label:"매주 불필요한 이메일을 삭제하겠다",tip:"이메일 1통 ≈ 약 4g CO₂eq(추정)로 보고, 매주 삭제를 1년(52주)으로 환산해 반영합니다. 정확한 값이 아니라 참고용입니다. (출처: Mike Berners-Lee, 『How Bad Are Bananas?』, 2010)",type:"num",unit:"통",per:0.000208,ref:true},
+ {id:"aircon",num:"34",label:"에어컨 온도를 평소보다 1℃ 올리겠다",desc:"권장 냉방온도 26℃",type:"yn",ton:0.150},
+ {id:"heat",num:"35",label:"난방온도를 평소보다 2℃ 낮추겠다",desc:"권장 난방온도 20℃",type:"yn",ton:0.132},
+ {id:"insulR",num:"36",label:"지금 사는 집에 단열공사나 창문 교체 공사를 하겠다",desc:"감축량은 진단에서 입력한 평수 기준으로 계산됩니다.",type:"yn",calc:function(r){return areaPy()*0.003;}},
+ {id:"solarR",num:"37",label:"집에 태양광을 설치하겠다",type:"select",options:[["none","아니오",0],["mini","베란다 미니태양광(0.3kW)",0.1356],["roof","주택 옥상 태양광(3kW)",1.356]]},
+ {id:"solarAgree",num:"38",label:"아파트 옥상 태양광 설치에 동의하겠다",desc:"공동주택 공용부분 태양광은 보통 해당 동 입주자 50% 이상 동의가 필요합니다(공동주택관리법 제35조).",type:"yn",record:true},
+ {id:"solarCoop",num:"39",label:"태양광 에너지 조합에 가입할 의사가 있다",type:"yn",record:true,desc:'가입 가능한 조합 — <a href="https://swsolarcoop.kr/" target="_blank" rel="noopener">수원시민햇빛발전사회적협동조합 ↗</a> · <a href="https://suwonsolar.mixon.io" target="_blank" rel="noopener">수원에너지협동조합 ↗</a> · <a href="https://ggenergycoop.com" target="_blank" rel="noopener">경기에너지협동조합 ↗</a> · <a href="https://moducoops.mixon.io" target="_blank" rel="noopener">모두가치에너지협동조합 ↗</a> · <a href="https://www.climate-today.com" target="_blank" rel="noopener">기후시민에너지협동조합 ↗</a>'},
+ {id:"ncpoint",num:"40",label:"환경부 탄소중립포인트에 가입해 에너지 소비를 줄이겠다",type:"yn",ton:0.107},
+ {id:"ricepot",num:"41",label:"전기밥솥 보온 시간을 줄이겠다",desc:"취사만 하고 보온 미사용(하루 약 9시간 보온 절감 가정)",type:"yn",ton:0.45792},
+ {id:"fridge",num:"42",label:"냉장고를 60% 정도만 채워 유지하겠다",type:"yn",ton:0.04159},
+ {id:"phone",num:"43",label:"휴대폰 사용시간을 줄이겠다",type:"num",pre:"평소 대비",post:"% 줄이겠다",calc:function(r,val){return phoneEmit()*(val/100);}},
+ {id:"tv",num:"44",label:"TV 시청 시간을 줄이겠다",desc:"하루에 줄일 시간을 적어 주세요.",type:"num",unit:"시간/일",per:0.01604},
+ {id:"blanket",num:"45",label:"겨울철 전기장판 사용시간을 줄이겠다",desc:"하루에 줄일 시간을 적어 주세요(겨울 120일 기준).",type:"num",unit:"시간/일",per:0.0629},
+ {id:"ecodrive",num:"46",label:"승용차 운전 시 친환경운전을 하겠다",desc:"해당하는 것을 모두 선택하세요.",type:"multi",options:[["idle","공회전 줄이기",0.30077],["speed","경제속도 유지(약 60~80km/h)",0.17002],["load","불필요한 짐 줄이기",0.02762]]},
+ {id:"car5",num:"47",label:"승용차 5부제에 참여하겠다",desc:"주 1회 운행하지 않고 대중교통 이용(연 52일)",type:"yn",ton:0.279},
+ {id:"ev",num:"48",label:"휘발유·디젤 차량을 전기차로 교체하겠다",desc:"교체 후 운행단계의 연간 감축효과",type:"yn",ton:0.97}
 ];
 const POLICY=[
  {cat:"에너지",name:"가정 에너지 절약 인센티브",desc:"전기·수도·도시가스 사용량을 줄이면 포인트·전기요금 할인·현금 캐시백을 받을 수 있어요.",extra:'<div class="pol-desc">· <a href="https://cpoint.or.kr/user/index.do" target="_blank" rel="noopener">탄소중립포인트 에너지 ↗</a> · <a href="https://en-ter.co.kr/ec/main/main.do" target="_blank" rel="noopener">한전 주택용 에너지캐시백 ↗</a> · <a href="https://k-gascashback.or.kr/" target="_blank" rel="noopener">도시가스 절약 캐시백 ↗</a></div>'},
@@ -711,6 +720,7 @@ function computeAll(){
   if(solarRoof){const v=-1.356;sec.주거+=v;rows.push(["주거","옥상 태양광","설치",v]);}
   const insul=parseFloat(radioVal("insul"))||0;
   if(insul&&area){const v=-(area*0.003);sec.주거+=v;rows.push(["주거","단열·창호 개선","예",v]);}
+  if(radioVal("acup")==="yes"){const v=-0.150;sec.주거+=v;rows.push(["주거","에어컨 1℃ 올림","예",v]);}
 
   // 여가 (2가지)
   document.querySelectorAll(".leisureChk").forEach(chk=>{
@@ -770,6 +780,7 @@ function computeAll(){
     Q26_난방비: radioVal("heatcost")!==null?COST_LABELS[+radioVal("heatcost")]:"",
     ...solarCols,
     Q28_단열창호: radioVal("insul")===null?"":(radioVal("insul")==="1"?"예":"아니오"),
+    주거_에어컨1도: radioVal("acup")==="yes"?"예":(radioVal("acup")==="no"?"아니오":""),
     ...leisureCols,
     Q30_스키_일: num("ski")||"",
     Q31_골프_일: num("golf")||"",
